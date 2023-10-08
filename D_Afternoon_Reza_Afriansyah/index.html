@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nested If-->
+    <div>
+        <h2>Pilih Upah Minimum Provinsi Anda!</h2>
+        <ul>
+            <li><button onclick="cekump('DKI Jakarta')">DKI Jakarta</button></li>
+            <li><button onclick="cekump('Sumatra Utara')">Sumatra Utara</button></li>
+            <li><button onclick="cekump('Riau')">Riau</button></li>
+            <li><button onclick="cekump('Kalimantan Utara')">Kalimantan Utara</button></li>
+            <li><button onclick="cekump('Papua')">Papua</button></li>
+            <li><button onclick="cekump('Jawa Tengah')">Jawa Tengah</button></li>
+            <li><button onclick="cekump('DI Yogyakarta')">DI Yogyakarta</button></li>
+            <li><button onclick="cekump('Sulawesi Selatan')">Sulawesi Selatan</button></li>
+        </ul>
+        <p id="ump"></p>
+        <script src="scriptif.js"></script>
+    </div> <hr>
+
+    <!--Switch Case-->
+    <div>
+        <h2>Pilih Hari</h2>
+        <select id="dropdown">
+            <option value="senin">Senin</option>
+            <option value="selasa">Selasa</option>
+            <option value="rabu">Rabu</option>
+            <option value="kamis">Kamis</option>
+            <option value="jumat">Jumat</option>
+            <option value="sabtu">Sabtu</option>
+            <option value="minggu">Minggu</option>
+        </select>
+        <button onclick="cekhari()">Cek Hari</button>
+        <div id="hasil"></div>
+        <script src="switch.js"></script>
+    </div> <hr>
+
+    <!--For Statement-->
+    <div>
+        <h2>Warna-warna:</h2>
+        <label for="jumlahWarna">Jumlah Warna:</label>
+        <input type="number" id="jumlahWarna">
+        <button onclick="generateColors()">Klik</button>
+    
+        <ul id="colorList"></ul>
+
+        <script src="forstatement.js"></script>
+    </div> <hr>
+
+    <!--While Statement-->
+    <div>
+        <h1>Tabel Perkalian</h1>
+        <label for="number">Masukkan Angka:</label>
+        <input type="number" id="number">
+        <button onclick="generateTable()">Klik</button>
+        <br>
+        <h2>Tabel:</h2>
+        <div id="table"></div>
+
+        <script src="while.js"></script>
+    </div> <hr>
+
+    <div>
+        <h1>Review Restoran</h1>
+        <label for="bintang">Masukkan jumlah bintang (0-5):</label>
+        <input type="number" id="bintang" min="0" max="5">
+        <button onclick="evaluasiReview()">Evaluasi</button>
+        <p id="rating"></p>
+
+        <script src="function.js"></script>
+    </div>
+</body>
+</html>
